@@ -1,0 +1,1280 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 138975,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login as a authenticated user",
+        "description": "",
+        "id": "login-feature;login-as-a-authenticated-user",
+        "after": [
+          {
+            "result": {
+              "duration": 79816,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10455643567,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on homepage",
+            "match": {
+              "location": "StepDefinitions.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2171904973,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to Login Page",
+            "match": {
+              "location": "StepDefinitions.user_navigates_to_Login_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2773779277,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and Password",
+            "match": {
+              "location": "StepDefinitions.user_enters_username_and_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47827281,
+              "error_message": "java.lang.AssertionError: Failed!\nExpected: is \"Welcome to your account. Here you can manage all of your personal information and orders.\"\n     but: was \"Welcome to your account. Here you can manage all   of your personal information and orders.\"\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\n\tat stepdefs.StepDefinitions.success_message_is_displayed(StepDefinitions.java:55)\n\tat ✽.Then success message is displayed(LoginProfile.feature:8)\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "success message is displayed",
+            "match": {
+              "location": "StepDefinitions.success_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "Verify if user is able to Login in to the site",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "LoginProfile.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 14433594,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepdefs.StepDefinitions.i_am_on_the_page_on_URL(StepDefinitions.java:62)\n\tat ✽.Given I am on the \"Company home\" page on URL \"www.mycomany.com\"(UpdateProfile.feature:8)\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29962,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Update name",
+        "description": "",
+        "id": "update-profile;update-name",
+        "after": [
+          {
+            "result": {
+              "duration": 28053,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I click on the \"Edit Personal Info\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edit Personal Info",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I fill in \"Your name\" with \"Thilina Ashen Gamage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your name",
+                  "offset": 11
+                },
+                {
+                  "val": "Thilina Ashen Gamage",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 255612,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepdefs.StepDefinitions.i_am_on_the_page_on_URL(StepDefinitions.java:62)\n\tat ✽.Given I am on the \"Company home\" page on URL \"www.mycomany.com\"(UpdateProfile.feature:8)\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 24409,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 26689,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"Z-Mob\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Z-Mob",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"3 months\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "3 months",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"QA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "QA",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 230414,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepdefs.StepDefinitions.i_am_on_the_page_on_URL(StepDefinitions.java:62)\n\tat ✽.Given I am on the \"Company home\" page on URL \"www.mycomany.com\"(UpdateProfile.feature:8)\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 28829,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"WJ5-Web UI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "WJ5-Web UI",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"1 month\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "1 month",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"UI Testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "UI Testing",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "User logs in to profile",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 285015,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepdefs.StepDefinitions.i_am_on_the_page_on_URL(StepDefinitions.java:62)\n\tat ✽.Given I am on the \"Company home\" page on URL \"www.mycomany.com\"(UpdateProfile.feature:8)\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I am on the \"Company home\" page on URL \"www.mycomany.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Company home",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycomany.com",
+                  "offset": 40
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "I fill in \"Username\" with \"Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username",
+                  "offset": 11
+                },
+                {
+                  "val": "Test",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I fill in \"Password\" with \"123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "123",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on the \"Log In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log In",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I am on the \"My profile\" page on URL \"www.mycompany.com/myprofile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My profile",
+                  "offset": 13
+                },
+                {
+                  "val": "www.mycompany.com/myprofile",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitions.i_am_on_the_page_on_URL(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I should see \"Welcome to your profile\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to your profile",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I should see the \"Log out\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_the_button(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29380,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Add new projects",
+        "description": "",
+        "id": "update-profile;add-new-projects;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 29655,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I click on the \"Add Project\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add Project",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I fill in \"Project Name\" with \"Q-Med\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Project Name",
+                  "offset": 11
+                },
+                {
+                  "val": "Q-Med",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I fill in \"Duration\" with \"5 months\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Duration",
+                  "offset": 11
+                },
+                {
+                  "val": "5 months",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I fill in \"Description\" with \"UI Testing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Description",
+                  "offset": 11
+                },
+                {
+                  "val": "UI Testing",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinitions.i_fill_in_with(String,String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I click on the \"Save Changes\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Save Changes",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.i_click_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I should see \"Your personal info has been successfully updated\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your personal info has been successfully updated",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefinitions.i_should_see_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@UpdateProfile"
+          }
+        ]
+      }
+    ],
+    "name": "Update Profile",
+    "description": "As an employee of the company\nI want to be able to update my name, projects, email, and phone numbers on my profile\nIn order to share my contact information with my colleagues",
+    "id": "update-profile",
+    "keyword": "Feature",
+    "uri": "UpdateProfile.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@UpdateProfile"
+      }
+    ]
+  }
+]
